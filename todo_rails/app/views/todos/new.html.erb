@@ -1,2 +1,20 @@
-<h1>Todos#new</h1>
+<h2> Enter your new Todo item and the Todo List ID below </h2>
+
+<%= form_for @todo, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <h3>Todo item:</h3>
+  <%= f.text_field :item %> <br>
+  <h3>Todo List ID:</h3>
+  <%= f.number_field :list_id %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+
+
+
+
+
+
+
+<p>Todos#new</p>>
 <p>Find me in app/views/todos/new.html.erb</p>
