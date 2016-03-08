@@ -1,2 +1,10 @@
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
+
+
+<h2>List: <%=@list.name%></h2> <!-- print the list name as H2 -->
+<ul>
+<% @list.todos.each do |todo| %>  <!-- start a .each loop over each todo table item -->
+<li> <%=todo.item%> </li> <!-- print the item in a paragraph tag -->
+<% end %>
+</ul>
