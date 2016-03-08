@@ -1,5 +1,21 @@
 Rails.application.routes.draw do
 
+  get 'lists/index'
+
+  get 'lists/new'
+
+  get 'lists/show'
+
+  get 'lists/create'
+
+  get 'todos/index'
+
+  get 'todos/new'
+
+  get 'todos/show'
+
+  get 'todos/create'
+
 resources :growls, :except => [:edit, :update, :destroy]
 
 end
